@@ -1,0 +1,54 @@
+$slider: 'slider';
+
+.#{$slider} {
+	width: 100%;
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+
+	&__nav-left,
+	&__nav-right {
+		position: absolute;
+		z-index: 100;
+		top: 45%;
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		border: 1px solid $white;
+		color: $white;
+		font-size: 26px;
+		line-height: 28px;
+		text-align: center;
+		cursor: pointer;
+		transition: background-color 0.2s;
+		background-color: rgba($white, 0.3);
+
+		&:hover {
+			background-color: rgba($white, 0.6);
+		}
+	}
+
+	&__nav-left {
+		left: 10px;
+	}
+
+	&__nav-right {
+		right: 10px;
+	}
+
+	&__item {
+		display: inline-block;
+		margin-right: -4px; // Remove small space from inline-block.
+	}
+
+	&__image {
+		width: 100%;
+	}
+
+	&__list {
+		white-space: nowrap;
+		transform: translateX(0);
+		transition: transform 0.3s;
+	}
+}
