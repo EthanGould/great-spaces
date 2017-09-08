@@ -1,7 +1,7 @@
 $section: 'section';
 
 .#{$section} {
-	padding: 120px 0 40px;
+	padding: 120px 20px 40px;
 	margin: 0 auto;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 300;
@@ -17,13 +17,11 @@ $section: 'section';
 	}
 
 	&--home {
-		padding: 40px 0;
+		padding: 20px 0 40px;
 	}
 
 	&--team {
-		&:after {
-			background: linear-gradient(#e4edd7, transparent);
-		}
+		background-color: #e4edd7;
 	}
 
 	&__heading {
@@ -37,6 +35,8 @@ $section: 'section';
 
 @media (min-width: $large) {
 	.#{$section} {
+		padding-left: 0;
+		padding-right: 0;
 
 		&__content {
 			max-width: 70%;

@@ -19,7 +19,7 @@ slider.eventHandlers = function() {
 };
 
 // Calculate the translateX value to slide the slider left or right.
-slider.updateSlider = function() {
+slider.updateSlider = function(event) {
 	var direction 		= event.target.dataset.direction;
 	var sliderOffset 	= window.getComputedStyle(this.sliderList, null).transform.split(',')[4] || '0';
 	var slideCount 		= document.querySelectorAll('.slider__item').length;
@@ -80,7 +80,7 @@ nav.stickToTop = function() {
 };
 
 // Scroll the page to a certian section.
-nav.scrollTo = function() {
+nav.scrollTo = function(event) {
 	var linkSection = event.target.dataset.section;
 	var section = document.querySelector('#' + linkSection);
 	if (section) {

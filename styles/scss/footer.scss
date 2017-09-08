@@ -2,7 +2,7 @@ $footer: 'footer';
 
 .#{$footer} {
 	position: relative;
-	padding: 50px;
+	padding: 50px 10px;
 	background-color: $white;
 	font-family: 'Roboto Slab', serif;
 
@@ -64,3 +64,11 @@ $footer: 'footer';
 		}
 	}
 }
+
+@media (min-width: $mid) {
+	.#{$footer} {
+		padding: 50px;
+	}
+}
+
+
