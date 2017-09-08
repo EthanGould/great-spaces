@@ -1,0 +1,9 @@
+// Colors.
+$white: white;
+$black: black;
+$gray: lighten($black, 50%);
+$light-gray: lighten($gray, 30%);
+
+// Breakpoints.
+$mid: 700px;
+$large: 900px;

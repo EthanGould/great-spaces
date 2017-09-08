@@ -1,8 +1,11 @@
 @import 'reset';
 
 // UI imports
-@import 'colors';
+@import 'variables';
 
 // Page module imports
 @import 'nav';
+@import 'section';
 @import 'slider';
+@import 'team';
+@import 'footer';

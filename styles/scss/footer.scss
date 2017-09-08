@@ -1,0 +1,66 @@
+$footer: 'footer';
+
+.#{$footer} {
+	position: relative;
+	padding: 50px;
+	background-color: $white;
+	font-family: 'Roboto Slab', serif;
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		left: 0;
+		height: 40%;
+		bottom: 0;
+		z-index: 1;
+		background: linear-gradient($white, $light-gray, $gray);
+	}
+
+	&__heading {
+		margin-bottom: 40px;
+		text-align: center;
+		font-size: 26px;
+		font-weight: 400;
+		text-decoration: underline;		
+	}
+
+	&__social-list {
+		text-align: center;
+		position: relative;
+		z-index: 100;
+	}
+
+	&__social-item {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	&__social-link {
+		svg {
+			fill: $black;
+			height: 60px;
+			transition: fill 0.3s;
+		}
+
+		#twitter:hover {
+			fill: #55acee;
+		}
+
+		#facebook:hover {
+			fill: #3b5998;
+		}
+
+		#instagram:hover {
+			fill: #e95950;
+		}
+
+		#email {
+			transform: scale(1.3);
+
+			&:hover {
+				fill: green;
+			}
+		}
+	}
+}

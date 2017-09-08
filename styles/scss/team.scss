@@ -1,0 +1,64 @@
+$team: 'team';
+
+.#{$team} {
+	margin-top: 30px;
+
+	&__list {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	&__item {
+		margin-bottom: 25px;
+		border-bottom: 1px dotted $light-gray;
+	}
+
+	&__logo {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	&__info {
+		line-height: 25px;
+	}
+
+	&__title {
+		text-align: center;
+		font-weight: 400;
+	}
+
+	&__description {
+		padding: 20px 0;
+	}
+}
+
+@media (min-width: $mid) {
+	.#{$team} {
+
+		&__list {
+			width: 100%;
+		}
+
+		&__logo {
+			width: 300px;
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		&__info {
+			width: calc(100% - 304px);
+			display: inline-block;
+			padding-left: 15px;
+		}
+
+		&__title {
+			text-align: left;
+		}
+
+		&__description {
+			padding: 10px 0;
+		}
+	}
+}

@@ -3,7 +3,6 @@ $slider: 'slider';
 .#{$slider} {
 	width: 100%;
 	position: relative;
-	max-width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
 
@@ -31,6 +30,7 @@ $slider: 'slider';
 
 	&__nav-left {
 		left: 10px;
+		display: none;
 	}
 
 	&__nav-right {
@@ -50,5 +50,9 @@ $slider: 'slider';
 		white-space: nowrap;
 		transform: translateX(0);
 		transition: transform 0.3s;
+	}
+
+	&__caption {
+		text-align: center;
 	}
 }
