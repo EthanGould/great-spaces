@@ -16,6 +16,10 @@ $section: 'section';
 		z-index: -1;
 	}
 
+	&--home {
+		padding: 40px 0;
+	}
+
 	&--team {
 		&:after {
 			background: linear-gradient(#e4edd7, transparent);
