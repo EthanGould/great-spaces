@@ -15,6 +15,14 @@ $section: 'section';
 		background-color: #e4edd7;
 	}
 
+	&__content {
+		margin: 0 auto;
+
+		&--thin {
+			max-width: 80%;
+		}
+	}
+
 	&__heading {
 		margin-bottom: 10px;
 		text-align: center;
@@ -34,5 +42,14 @@ $section: 'section';
 			min-height: calc(100vh - 160px);
 			margin: 0 auto;
 		}
+
+		&__content--thin {
+			max-width: 40%;
+		}
+
+		&__text {
+			line-height: 26px;
+		}
 	}
+
 }

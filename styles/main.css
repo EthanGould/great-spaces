@@ -81,6 +81,10 @@ body {
     padding: 20px 0 40px; }
   .section--team {
     background-color: #e4edd7; }
+  .section__content {
+    margin: 0 auto; }
+    .section__content--thin {
+      max-width: 80%; }
   .section__heading {
     margin-bottom: 10px;
     text-align: center;
@@ -95,7 +99,11 @@ body {
     .section__content {
       max-width: 70%;
       min-height: calc(100vh - 160px);
-      margin: 0 auto; } }
+      margin: 0 auto; }
+    .section__content--thin {
+      max-width: 40%; }
+    .section__text {
+      line-height: 26px; } }
 .slider {
   width: 100%;
   position: relative;
